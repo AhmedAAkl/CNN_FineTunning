@@ -6,3 +6,5 @@ We will be using the pre-trained Deep Neural Nets trained on the ImageNet challe
 
 The pre-trained models we will consider are VGG16, VGG19, Inception-v3, Xception, ResNet50, InceptionResNetv2 and MobileNet. Instead of creating and training deep neural nets from scratch, what if we use the pre-trained weights of these deep neural net architectures (trained on ImageNet dataset) and use it for our own dataset?
 
+
+# still preparing other models
