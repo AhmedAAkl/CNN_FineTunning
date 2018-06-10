@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from keras.optimizers import SGD
 from keras.layers import Input, Dense, Convolution2D, MaxPooling2D, AveragePooling2D, Flatten, merge
 from keras.layers.normalization import BatchNormalization
