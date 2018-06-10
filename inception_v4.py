@@ -280,7 +280,7 @@ def inception_v4_model(img_rows, img_cols, color_type=1, num_classeses=None, dro
     
                             
     # Load inception model
-    model = inception_v3_model(img_rows, img_cols, channel, num_classes)
+    model = inception_v4_model(img_rows, img_cols, channel, num_classes)
     
     # uncomment to print layers index and names
     
