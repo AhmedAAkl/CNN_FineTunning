@@ -267,7 +267,7 @@ def inception_v3_model(img_rows, img_cols, channel=1, num_classes=None):
     train_images_num = len(train_generator.filenames)
     valid_images_num = len(validation_generator.filenames)
     
-    file_path = "output_dir/inceptionv3_finetuning_transparent.h5"
+    file_path = "output_dir/inceptionv3.h5"
     early_stopping = EarlyStopping(monitor='val_acc',patience=2,verbose=0,mode='auto')
     checkpoint = ModelCheckpoint(file_path,monitor='val_acc',verbose=1,save_best_only=True,mode='max')
     callbacks_list = [checkpoint,early_stopping]
@@ -287,6 +287,6 @@ def inception_v3_model(img_rows, img_cols, channel=1, num_classes=None):
     training_time = end - start
     print(training_time)
     # i used early stopping to save the best weights
-    #model.save_weights("/output_dir/inceptionv3_finetuning_transparent1.h5")
+    #model.save_weights("/output_dir/inceptionv3_finetuning.h5")
     
     print("all weights are saved properly")
